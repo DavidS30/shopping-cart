@@ -1,0 +1,8 @@
+<button class="cart" (click)="onClickMenuItem()">
+  <img src="/assets/menu_white.svg" alt="Open Menu" />
+</button>
+<span class="logo">Tienda Virtual</span>
+<button class="cart" (click)="onClickShoppingCart()">
+  <img src="/assets/shopping_cart.svg" alt="Open Cart" />
+  <span>{{ itemCount$ | async }}</span>
+</button>

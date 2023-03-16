@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'shopping_cart';
+  shoppingCart: boolean = false;
+  menuItem: boolean = false;
+
+  showShoppingCart(): void {
+    this.shoppingCart =!this.shoppingCart;
+  }
+
+  showMenuItem (): void {
+    this.menuItem = true;
+  }
+
+  closeMenuItem (): void {
+    this.menuItem = false;
+  }
+
+  constructor() {}
 }

@@ -1,0 +1,13 @@
+
+<div class="img-container" (click)="navigateProductDetails()">
+    <img src="/assets/items/{{ product.imageUrl }}" alt="{{ product.name }}" />
+</div>
+<div class="info">
+    <a (click)="navigateProductDetails()">
+        <strong>{{ product.name }}</strong>
+    </a>
+    <span>${{ product.price | number : '1.1-2' }}</span>
+</div>
+<button title="Añadir al Carrito" (click)="onClickAddToCart()">
+    <img src="/assets/add_white.svg" alt="+" />
+</button>

@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    width: 100vw;
+    height: 100vh;
+  }
+
+.ng-touched.ng-invalid:is(input, textarea),
+.ng-dirty.ng-invalid:is(input, textarea) {
+  outline: 2px solid #bd0c0c;
+}
+
+.ng-dirty.ng-pending:is(input, textarea) {
+  outline: 2px solid #838a2a;
+}
